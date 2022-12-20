@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Locked Box</title>
+  </head>
+  <body>
+    <div style="margin: 30px; max-width: 65ch; overflow-wrap: normal">
+      <h2>Eloquent JS / Exercises / Ch 7 / The Locked Box</h2>
+      <p style="text-align: justify; background-color: whitesmoke">
+        Consider the following (rather contrived) object. It is a box with a
+        lock. There is an array in the box, but you can get at it only when the
+        box is unlocked. Directly accessing the private _content property is
+        forbidden. Write a function called withBoxUnlocked that takes a function
+        value as ar- gument, unlocks the box, runs the function, and then
+        ensures that the box is locked again before returning, regardless of
+        whether the argument function returned normally or threw an exception.
+        For extra points, make sure that if you call withBoxUnlocked when the
+        box is already unlocked, the box stays unlocked.
+      </p>
+      <pre>
+		<code>
+const box = {
+	locked: true,
+	unlock() { this.locked = false; },
+	lock() { this.locked = true; },
+	_content: [],
+	get content() {
+		if (this.locked) throw new Error("Locked!");
+		return this._content;
+	}
+};
+		</code>
+	</pre>
+    </div>
+  </body>
+  <script type="module" src="theLockedBox.js"></script>
+</html>
