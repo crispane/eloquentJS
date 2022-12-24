@@ -46,7 +46,8 @@ console.log(re4.test('-;'));
 console.log(re4.test('ba2c'));
 
 //Exactly one 'a'
-let re5 = /^[^a]*a[^a]*$/;
+let re5 = /\b[^\Wa]*a[^\Wa]*\b/;
+//let re5 = /^[a]+$/;
 console.log('');
 console.log('5: ');
 console.log(re5.test('wa2c'));
