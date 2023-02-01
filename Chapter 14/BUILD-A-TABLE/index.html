@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build a Table</title>
+  </head>
+  <body>
+    <div style="margin: 30px; max-width: 65ch; overflow-wrap: normal">
+      <h2>Eloquent JS / Exercises / Ch 14 / Build a Table</h2>
+      <p style="text-align: justify; background-color: whitesmoke">
+        An HTML table is built with the following tag structure:
+      </p>
+      <pre>
+&lt;table&gt;
+ &lt;tr&gt;
+  &lt;th&gt;name&lt;/th&gt;
+  &lt;th&gt;height&lt;/th&gt;
+  &lt;th&gt;place&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;Kilimanjaro&lt;/td&gt;
+  &lt;td&gt;5895&lt;/td&gt;
+  &lt;td&gt;Tanzania&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+		</pre
+      >
+      <p>
+        For each row, the &lt;table&gt; tag contains a &lt;tr&gt; tag. Inside of
+        these &lt;tr&gt; tags, we can put cell elements: either heading cells
+        (&lt;th&gt;) or regular cells (&lt;td&gt;). Given a data set of
+        mountains, an array of objects with name, height, and place properties,
+        generate the DOM structure for a table that enumerates the objects. It
+        should have one column per key and one row per object, plus a header row
+        with &lt;th&gt; elements at the top, listing the column names.
+      </p>
+    </div>
+  </body>
+  <script type="module" src="numbersAgain.js"></script>
+</html>
