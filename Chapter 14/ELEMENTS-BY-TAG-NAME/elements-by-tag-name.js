@@ -15,6 +15,9 @@ function byTagName(node, tagName) {
 	return found;
 }
 
+console.log(document.body.childNodes.length);
 console.log(byTagName(document.body, "h1").length);
+console.log(byTagName(document.body, "h1"));
 console.log(byTagName(document.body, "span").length);
+console.log(byTagName(document.body, "span"));
 
