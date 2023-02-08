@@ -10,3 +10,9 @@ body {
   background: blue;
   position: absolute;
 }
+
+.dragging-bar {
+  background: orange;
+  width: 60px;
+  height: 20px;
+}
