@@ -1,0 +1,11 @@
+body {
+  height: 300px;
+}
+
+.trail {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background: teal;
+}
